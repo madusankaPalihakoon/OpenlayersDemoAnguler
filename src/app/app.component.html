@@ -1,0 +1,88 @@
+<div class="h-screen w-screen">
+  <header
+    class="inline-flex py-4 bg-blue-500 w-screen text-blue-50 text-2xl h-fit"
+  >
+    <div class="w-11/12 mx-auto flex text-nowrap">
+      <div class="w-1/2 inline-flex gap-5 ml-2">
+        <div>Logo</div>
+        <div>user</div>
+      </div>
+      <div class="w-1/2 flex justify-end">
+        <div>login/signup</div>
+      </div>
+    </div>
+  </header>
+  <main class="flex w-full h-full">
+    <div className="flex flex-col h-full justify-center gap-6 flex-wrap w-max">
+      <div
+        class="w-full px-2 rounded-sm bg-blue-500 h-full text-white justify-center"
+      >
+        <h1>Panel</h1>
+        <h3>select shape</h3>
+        <div class="w-full mx-auto my-2">
+          <button
+            (click)="onShapeSelect('Point')"
+            class="bg-blue-400 text-black w-fit h-fit p-2 mx-auto flex items-center rounded-sm"
+          >
+            <mat-icon fontIcon="circle"></mat-icon>
+          </button>
+        </div>
+        <div class="w-full mx-auto my-2">
+          <button
+            (click)="onShapeSelect('Circle')"
+            class="bg-blue-400 text-black w-fit h-fit p-2 mx-auto flex items-center rounded-sm"
+          >
+            <mat-icon fontIcon="radio_button_unchecked"></mat-icon>
+          </button>
+        </div>
+        <div class="w-full mx-auto my-2">
+          <button
+            (click)="onShapeSelect('Square')"
+            class="bg-blue-400 text-black w-fit h-fit p-2 mx-auto flex items-center rounded-sm"
+          >
+            <mat-icon fontIcon="crop_square"></mat-icon>
+          </button>
+        </div>
+        <div class="w-full mx-auto my-2">
+          <button
+            (click)="onShapeSelect('Box')"
+            class="bg-blue-400 text-black w-fit h-fit p-2 mx-auto flex items-center rounded-sm"
+          >
+            <mat-icon fontIcon="check_box_outline_blank"></mat-icon>
+          </button>
+        </div>
+        <div class="w-full mx-auto my-2">
+          <button
+            (click)="onShapeSelect('LineString')"
+            class="bg-blue-400 text-black w-fit h-fit p-2 mx-auto flex items-center rounded-sm"
+          >
+            <mat-icon fontIcon="linear_scale"></mat-icon>
+          </button>
+        </div>
+        <div class="w-full mx-auto my-2">
+          <button
+            (click)="onShapeSelect('Polygon')"
+            class="bg-blue-400 text-black w-fit h-fit p-2 mx-auto flex items-center rounded-sm"
+          >
+            <mat-icon fontIcon="polyline"></mat-icon>
+          </button>
+        </div>
+        <div class="w-full mx-auto my-2">
+          <button
+            class="bg-blue-400 text-black w-fit h-fit p-2 mx-auto flex items-center rounded-sm"
+          >
+            <mat-icon fontIcon="content_cut"></mat-icon>
+          </button>
+        </div>
+        <div class="w-full mx-auto my-2">
+          <button
+            class="bg-blue-400 text-black w-fit h-fit p-2 mx-auto flex items-center rounded-sm"
+          >
+            <mat-icon fontIcon="delete_outline"></mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="ol-map" class="w-full h-full"></div>
+  </main>
+</div>
